@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <form method = "post">
+        <input th:field = ${registerFormDTO.username}" />
+        <input th:field = ${registerFormDTO.password}" type = "password"/>
+        <input th:field = ${registerFormDTO.verifyPassword}" type="password"/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>
